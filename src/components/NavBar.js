@@ -14,12 +14,6 @@ class NavBar extends Component {
                         </button>
                         <a className="navbar-brand" href="#">Leave</a>
                     </div>
-                    <div id="navbar" className="collapse navbar-collapse">
-                        <ul className="nav navbar-nav">
-                            <li className="active"><a href="#">Holidays</a></li>
-                            <li><a href="#contracts">Contracts</a></li>
-                        </ul>
-                    </div>
                 </div>
             </nav>
         );
