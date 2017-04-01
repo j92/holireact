@@ -8,9 +8,12 @@
     "react-addons-css-transition-group": "^15.4.2",
     "react-addons-transition-group": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
     "react-router": "^2.0.0",
     "react-router-dom": "^4.0.0",
-    "reactstrap": "^4.3.0"
+    "reactstrap": "^4.3.0",
+    "redux": "^3.6.0",
+    "redux-form": "^6.6.1"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
