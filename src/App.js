@@ -1,26 +1,28 @@
-import React, { Component } from 'react';
-import './App.css';
-import Clock from "./components/Clock";
-import NavBar from "./components/NavBar";
-import SideBar from "./components/SideBar";
+import React from 'react'
+import { ListGroup, ListGroupItem } from 'reactstrap'
+import { Link } from 'react-router'
+import './App.css'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <NavBar/>
-        <div className="container-fluid">
-          <div className="row">
-            <SideBar/>
-            <div className="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                <h2>Welcome to React</h2>
-                <Clock/>
+class App extends React.Component {
+    render() {
+        return (
+            <div className="container-fluid app-container">
+                <div className="row">
+                    <div className="col-md-3">
+                        <ListGroup className="sidebar">
+                            <ListGroupItem><Link to="/dashboard" activeClassName="active">Dashboard</Link></ListGroupItem>
+                            <ListGroupItem><Link to="/contracts" activeClassName="active">Contracts</Link></ListGroupItem>
+                            <ListGroupItem><Link to="/holidays" activeClassName="active">Holidays</Link></ListGroupItem>
+                        </ListGroup>
+                    </div>
+                    <div className="col-md-9">
+                        {this.props.children}
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
+        )
+    }
 }
 
-export default App;
+export default App
+

@@ -1,3 +1,7 @@
-.sidebar {
+.sidebar ul li a .active{
+  color: red;
+}
+
+.app-container {
   padding: 20px;
 }
